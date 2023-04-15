@@ -12,7 +12,7 @@ Web services -(REST/ SOAP) - Postman, SOAP UI, Rest Assured,
 
 Selenium Features
 Multi browser support - IE, Chrome, FF, Safari, Opera etc.
-Multi langauge support - Java .jar, C# dll, Ruby gem, Python .PHP, JS etc
+Multi language support - Java .jar, C# dll, Ruby gem, Python .PHP, JS etc
 Multi OS/Platform Support - Win, Linux, mac, solaris, ios, android etc.
 
 Selenium -2004 Developer name - Jason Huggins - Thoughtwork.
@@ -20,17 +20,17 @@ Selenium -2004 Developer name - Jason Huggins - Thoughtwork.
 Has 4 Component - IDE, RC, WebDriver, GRID
 Selenium 1.0 - IDE + RC + GRID1
 Selenium 2.0 - WebDriver + RC - 2.51.1 Was last version + Grid2
-Selenium 3.0 - 3.141.59 - WebDriver + W3C Spec. Recommandation + Grid 3
-Selenium 4.0 - 4.6.0 - WebDriver + W3C Spec. Recommandation + Grid4
+Selenium 3.0 - 3.141.59 - WebDriver + W3C Spec. Recommendation + Grid 3
+Selenium 4.0 - 4.6.0 - WebDriver + W3C Spec. Recommendation + Grid4
 
 Introduction https://www.selenium.dev/
 
 What is an API?
 
 Selenium we can use only - 25% in our Project.
-Core Java - Environment Veriable.
+Core Java - Environment Variable.
 Intellij IDea.
 Maven / ANT/ Gradle - Build Tools
-JUnit / TestNG - Java Tesitng Framework
+JUnit / TestNG - Java Testing Framework
 Extent Report
 CI - Jenkins

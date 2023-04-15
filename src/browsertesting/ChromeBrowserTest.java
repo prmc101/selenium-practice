@@ -18,8 +18,8 @@ public class ChromeBrowserTest {
         WebDriver driver = new ChromeDriver();
         // Open the URL into Browser
         driver.get(baseUrl);
-        // Maximise the Browser
         driver.manage().window().maximize();
+        // Maximise the Browser
         // We give Implicit wait to driver
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
@@ -47,10 +47,7 @@ public class ChromeBrowserTest {
 
         driver.findElement(By.name("Password")).sendKeys("Prime123");
 
-
-
         // Close the Browser
         driver.close();
-        driver.quit();
     }
 }
