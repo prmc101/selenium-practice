@@ -21,7 +21,7 @@ public class LocatorDemo1 extends BaseTest {
     @Test
     public void locatorDemoTest1() {
         //ID and Name Locators
-        driver.findElement(By.id("email")).sendKeys("prime123@gmail.com");
+        driver.findElement(By.id("small-searchterms")).sendKeys("Mobile");
         driver.findElement(By.name("password")).sendKeys("prime123");
 
         // Link text Locator
@@ -31,7 +31,6 @@ public class LocatorDemo1 extends BaseTest {
         driver.findElement(By.partialLinkText("Sign")).click();
 
     }
-
     @After
     public void tearDown() {
         closeBrowser();

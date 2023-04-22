@@ -20,18 +20,23 @@ public class LocatorDemo4 extends BaseTest {
 
     @Test
     public void locatorDemoTest4() {
-       // CSS Selector
-        //  tagName[attribute='value']
-        driver.findElement(By.cssSelector("input[id='small-searchterms']")).sendKeys("Mobile");
+        // CSS Selector
+        //ID
+        driver.findElement(By.cssSelector("#displayed-text")).sendKeys("Prime Testing");
 
-        // input#small-searchterms
-        // input.search-box-text.ui-autocomplete-input
+        // Tag and ID
+        driver.findElement(By.cssSelector("input#displayed-text")).sendKeys("Prime Testing");
+
+        // Class
+        driver.findElement(By.cssSelector(".inputs.displayed-class")).sendKeys("Prime Testing");
+
+        // Tag and Class
+        driver.findElement(By.cssSelector("input.inputs.displayed-class")).sendKeys("Prime Testing");
 
     }
-
     @After
     public void tearDown() {
-//        closeBrowser();
+        closeBrowser();
     }
 
 

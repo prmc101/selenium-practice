@@ -20,37 +20,36 @@ public class LocatorDemo3 extends BaseTest {
 
     @Test
     public void locatorDemoTest3() {
-       // Relative Xpath
-        driver.findElement(By.xpath("//input[@id='small-searchterms']")).sendKeys("Mobile");
+        // Relative Xpath
+       /* WebElement searchBox = driver.findElement(By.xpath("//input[@id='small-searchterms']"));
+        searchBox.sendKeys("Mobile");*/
 
         // xpath with or
-        //input[@id='small-searchterms' or @name = 'q']
+        driver.findElement(By.xpath("//input[@id='small-searchterms' or @name = 'q']")).sendKeys("Mobile");
 
         // xpath with and
-        //input[@id='small-searchterms' and @placeholder = 'Search store']
+        driver.findElement(By.xpath("//input[@id='small-searchterms' and @placeholder= 'Search store']")).sendKeys("mobile");
 
         //xpath with contains()
         //tagName[contains(@attribute,'value')]
-        //input[contains(@id, 'sear')]
+        driver.findElement(By.xpath("//input[contains(@id, 'sear')]")).sendKeys("Mobile");
 
         // xpath with starts-with
         //tagName[starts-with(@attribute,'value')]
-        //input[starts-with(@id, 'small')]
+        driver.findElement(By.xpath("//input[starts-with(@placeholder, 'Search')]")).sendKeys("Mobile");
 
         //xpath with text()
         //tagName[text() = 'value')]
-        //a[text() = 'Log in']
+        driver.findElement(By.xpath("//a[text() = 'Log in']")).click();
 
         // xpath with chained
-        //ul[@class='top-menu notmobile']//a[text() = 'Computers ']
-
-
+        driver.findElement(By.xpath("//ul[@class='top-menu notmobile']//a[text()='Computers ']")).click();
 
     }
 
     @After
     public void tearDown() {
-//        closeBrowser();
+        closeBrowser();
     }
 
 
