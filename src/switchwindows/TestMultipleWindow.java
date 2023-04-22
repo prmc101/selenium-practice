@@ -3,10 +3,7 @@ package switchwindows;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import utilities.Utility;
-
-import java.util.Set;
 
 /**
  * Created by Jay Vaghani
@@ -22,7 +19,7 @@ public class TestMultipleWindow extends Utility {
     @Test
     public void switchMultipleWindowExample() {
 
-        clickOnElement(By.xpath("//div[@class='orangehrm-login-footer-sm']//a[1]"));
+        /*clickOnElement(By.xpath("//div[@class='orangehrm-login-footer-sm']//a[1]"));
         clickOnElement(By.xpath("//div[@class='orangehrm-login-footer-sm']//a[2]"));
         clickOnElement(By.xpath("//div[@class='orangehrm-login-footer-sm']//a[3]"));
         clickOnElement(By.xpath("//div[@class='orangehrm-login-footer-sm']//a[4]"));
@@ -32,7 +29,7 @@ public class TestMultipleWindow extends Utility {
 
         //Get all handles
         Set<String> handles = driver.getWindowHandles();
-        //Convert Set into List
+        //Convert Set into List*/
 
     }
 

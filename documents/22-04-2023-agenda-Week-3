@@ -1,4 +1,7 @@
 Today's 22/04/2023
+Revision
+Clone the Project. https://github.com/prmc101/selenium-practice.git
+WebDriver Architecture.
 1. Xpath axis
 	Self
 	Parent
@@ -9,12 +12,14 @@ Today's 22/04/2023
 	Following-sibling
 	Preceding
 	Preceding-sibling
+
 2. Relative Locators
     above
     below
     near
     toRightOf
     toLeftOf
+
 3. Building Utility class
 
 5. Alert Interface
@@ -29,6 +34,7 @@ Today's 22/04/2023
 	6.2 selectByVisibleText()
 	6.3 selectByIndex()
 	6.4 getOptions()
+
 7. Working With List of element
 
 8. SwitchToWindowAndIframe

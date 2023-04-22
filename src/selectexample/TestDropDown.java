@@ -3,7 +3,12 @@ package selectexample;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import utilities.Utility;
+
+import java.util.List;
 
 /**
  * Created by Jay Vaghani
@@ -17,14 +22,32 @@ public class TestDropDown extends Utility {
         openBrowser(baseUrl);
     }
 
+
     @Test
     public void dropDownExample() {
+        WebElement dropDown = driver.findElement(By.name("country"));
+        Select select = new Select(dropDown);
+        // Select by visible text
+        select.selectByVisibleText("Australia");
+        // Select by Value
+        select.selectByValue("Estonia");
+        // Select by Index
+        select.selectByIndex(5);
+
+//        selectByVisibleTextFromDropDown(By.name("country"), "Australia");
+
+        List<WebElement> allOptions = select.getOptions();
+        System.out.println(allOptions.size());
+
+        for (WebElement element  : allOptions ){
+            System.out.println(element.getText());
+        }
 
     }
 
     @After
     public void tearDown() {
-        closeBrowser();
+//        closeBrowser();
     }
 
 }

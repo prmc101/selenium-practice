@@ -19,6 +19,7 @@ public class TestMultipleElementsRelativeLocators extends BaseTest {
 
     @Test
     public void relativeLocators() {
+        //Homework
 
     }
 

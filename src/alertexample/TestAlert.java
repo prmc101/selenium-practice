@@ -3,6 +3,8 @@ package alertexample;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import utilities.Utility;
 
 /**
@@ -18,7 +20,11 @@ public class TestAlert extends Utility {
 
     @Test
     public void alertExample(){
-
+        clickOnElement(By.id("alertbtn")); // Click on Alert button
+        Alert alert = driver.switchTo().alert(); // Creating alert Object reference and Switch to Alert
+        System.out.println(alert.getText()); // Getting the text from alert
+        alert.accept(); // Accepting the alert
+//        alert.dismiss();
     }
 
     @After
