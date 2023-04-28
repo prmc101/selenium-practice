@@ -21,26 +21,26 @@ public class TestRelativeLocators extends BaseTest {
 
     @Test
     public void relativeLocators() {
-        // above
-        driver.findElement(RelativeLocator.with(By.tagName("input")).above(By.tagName("select"))).sendKeys("prime123@gmail.com");
+        /*WebElement above = driver.findElement(RelativeLocator.with(By.tagName("input")).above(By.tagName("select")));
+        above.sendKeys("Prime Testing");
 
-        // below
-        driver.findElement(RelativeLocator.with(By.tagName("input")).below(By.tagName("select"))).sendKeys("London");
+        WebElement below = driver.findElement(RelativeLocator.with(By.tagName("input")).below(By.tagName("select")));
+        below.sendKeys("London");
 
-        // near
-//        driver.findElement(RelativeLocator.with(By.partialLinkText("THE")).near(By.linkText("Signin"))).click();
+        WebElement near = driver.findElement(RelativeLocator.with(By.partialLinkText("THE")).near(By.linkText("Signin")));
+        near.click();
 
-        // toRightOf
-        driver.findElement(RelativeLocator.with(By.xpath("//input[@type='password']"))
-                .toRightOf(By.tagName("label"))).sendKeys("Prime1234");
+        WebElement toRightOf = driver.findElement(RelativeLocator.with(By.xpath("//input[@type='password']")).toRightOf(By.tagName("label")));
+        toRightOf.sendKeys("Prime123");
 
-        // toLeftOf
-        driver.findElement(RelativeLocator.with(By.linkText("Signin"))
-                .toLeftOf(By.xpath("//body/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/input[1]"))).click();
+        WebElement toLeftOf = driver.findElement(RelativeLocator.with(By.linkText("Signin")).toLeftOf(By.xpath("(//*[@id='load_form']/div[1]/div[2]/input)[2]")));
+        toLeftOf.click();*/
 
         // Chaining the Relative Locators
-        // Example using above and below locator
-        // Homework
+        driver.findElement(RelativeLocator.with(By.tagName("input"))
+                        .above(By.linkText("Signin"))
+                        .below(By.xpath("//*[@id=\"load_form\"]/fieldset[6]/input")))
+                .sendKeys("Prime Testing");
 
     }
     @After

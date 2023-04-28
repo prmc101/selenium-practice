@@ -21,7 +21,7 @@ public class TestMouseHover extends Utility {
     }
 
     @Test
-    public void mouseHoverExample(){
+    public void mouseHoverExample() throws InterruptedException {
         //Computer -------> Software and Click
         WebElement computer = driver.findElement(By.xpath("//ul[@class='top-menu notmobile']//a[normalize-space()='Computers']"));
         WebElement software = driver.findElement(By.xpath("//ul[@class='top-menu notmobile']//a[normalize-space()='Software']"));
@@ -29,6 +29,7 @@ public class TestMouseHover extends Utility {
         /*actions.moveToElement(computer).build().perform();
         actions.moveToElement(software).click().build().perform();*/
         actions.moveToElement(computer).moveToElement(software).click().build().perform();
+        Thread.sleep(2000);
     }
 
     @After
